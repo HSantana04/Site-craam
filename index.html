@@ -1,0 +1,156 @@
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Centro de Rádio Astronomia e Astrofísica Mackenzie</title>
+      <style>
+          body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif; /* Fonte para o texto */
+          }
+
+          header {
+              position: relative; 
+              width: 100%;
+              height: 300px; 
+              background-image: url('https://www.mackenzie.br/fileadmin/user_upload/banner_laboratorios-craam-bg.png'); 
+              background-size: cover;
+              background-position: center;
+          }
+
+          .title {
+              position: absolute; 
+              top: 50%; 
+              left: 50%;
+              transform: translate(-50%, -50%); 
+              color: #f5f5f5; /* Cor do texto */
+              font-size: 32px; /* Tamanho da fonte */
+          }
+
+          .content {
+              background-color: #4d3838; /* Cor de fundo cinza */
+              width: 100%;
+              flex-grow: 1;
+              padding: 20px;
+              box-sizing: border-box;
+          }
+        .content h1 {
+            color: #ffffff; /* Cor do texto na parte cinza */
+           font-size: 16px;
+          url('https://www.mackenzie.br/fileadmin/user_upload/banner_laboratorios-craam-bg.png');
+        }
+        .content h2 {
+            color: #ffffff; /* Cor do texto na parte cinza */
+          font-size: 16px;
+        }
+        .content h3 {
+            color: #ffffff; /* Cor do texto na parte cinza */
+          font-size: 16px;
+        }
+        .content h4 {
+            color: #ffffff; /* Cor do texto na parte cinza */
+          font-size: 16px;
+        }
+        h5 {
+          font-size: 16px;
+          color: #ffffff;
+          text-align: center;
+          border-radius: 500%;
+        }
+        label {
+          font-weight: bold;
+          text-align: center;
+        }
+        input[type="text"] {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 10px;
+          border: none;
+          border-radius: 5px;
+          background-color: #555;
+          color: #ffffff;
+          text-align: center;
+        }
+        input[type="submit"] {
+          background-color: #007bff;
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          text-align: center;
+        }
+        input[type="submit"]:hover {
+          text-align: center;
+          background-color: #000000;
+        }
+        .content h6 {
+            color: #ffffff; 
+          font-size: 16px;
+        }
+      </style>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+      <header>
+          <div class="title">
+            Centro de Rádio Astronomia e Astrofísica Mackenzie
+          </div>
+      </header>
+      <div class="content">
+
+      </div>
+    <div class="container">
+        <div class="texto">
+            <?php
+                // Seu texto PHP aqui
+                echo "EXEMPLO IMAGEM";
+            ?>
+        </div>
+        <div class="imagem">
+            <img src="exemplo1.jpg" alt="Minha Imagem">
+        </div>
+    </div>
+    <div class="content">
+        <h1>       O CRAAM é tipo um centro de pesquisas irado, sabe? Ele é tocado pelo Instituto Presbiteriano Mackenzie e pelo MCT/INPE - Instituto Nacional de Pesquisas Espaciais. Eles fazem um monte de coisas legais, tipo operar telescópios incríveis, rastrear ondas solares, estudar o espaço com detectores e sensores super high-tech, e até fazem experimentos na Antártica!
+</h1>
+      </div>
+    <div class="content">
+          <h2>Além disso, eles ajudam a galera que está estudando pós-graduação em Ciências e Aplicações Geoespaciais na UPM/EE. E não para por aí, eles também apoiam pessoal que tá começando na pesquisa científica, tanto mestrado, doutorado quanto pós-doutorado.</h2>
+      </div>
+    <div class="content">
+        <h3>Resumindo, o CRAAM é tipo o quartel-general da ciência espacial, onde os cientistas mandam muito bem estudando o espaço e ajudando outros cientistas a se tornarem feras também! 🚀✨</h3>
+    </div>
+    <div class="content">
+        <h4>O CRAAM é tipo um centro de pesquisa topíssimo! Eles são craques em várias áreas, como estudar ondas de rádio, o Sol (e até suas explosões!), entender a relação entre o Sol e a Terra, investigar o clima espacial, analisar a nossa atmosfera, explorar o espaço geodésico, estudar estrelas e exoplanetas, criar instrumentos super avançados e tecnologia Terahertz. Eles são tipo os mestres da ciência nesses temas todos! 🌟🔬🚀</h4>
+    </div>
+    <div class="content">
+      <h6>O CRAAM é tipo um centro de pesquisa topíssimo! Eles são craques em várias áreas, como estudar ondas de rádio, o Sol (e até suas explosões!), entender a relação entre o Sol e a Terra, investigar o clima espacial, analisar a nossa atmosfera, explorar o espaço geodésico, estudar estrelas e exoplanetas, criar instrumentos super avançados e tecnologia Terahertz. Eles são tipo os mestres da ciência nesses temas todos! 🌟🔬🚀</h6>
+      <h5>Pesquisa de Imagens por Data
+    <form>
+        <label for="dataInput">Selecione uma Data:</label>
+        <input type="date" id="dataInput">
+        <button type="button" onclick="pesquisarImagem()">Pesquisar</button>
+    </form>
+    <script src="script.js"></script>
+        </h5>
+      <div id="disqus_thread"></div>
+      <script>
+      var disqus_config = function () {
+          this.page.url = PAGE_URL;  // Substitua pela URL da sua página
+          this.page.identifier = PAGE_IDENTIFIER; // Substitua por um identificador único para cada página
+      };
+      (function() {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://SEU-SUBDOMINIO.disqus.com/embed.js'; // Substitua SEU-SUBDOMINIO pelo seu subdomínio Disqus
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+      </script>
+  </body>
+</html>
